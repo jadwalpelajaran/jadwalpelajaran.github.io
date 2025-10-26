@@ -484,29 +484,37 @@ body {
   }
 }
 
-#footer {
-  text-align: center;
-  font-size: 0.8rem; /* tadinya 0.9rem */
-  color: #888;
-  padding: 15px 10px; /* sedikit lebih ramping */
-  margin-top: 40px;
-}
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #888;
+      margin-top: auto;
+      padding: 25px 10px;
+      border-top: 1px solid #eee;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
 
-#footer a {
-  color: #666;
-  text-decoration: none;
-  margin: 0 6px;
-  transition: color 0.2s ease;
-}
+    footer a {
+      color: #666;
+      text-decoration: none;
+      margin: 0 6px;
+      transition: color 0.2s ease;
+    }
 
-#footer a:hover {
-  color: #000;
-  text-decoration: underline;
-}
+    footer a:hover {
+      color: #000;
+      text-decoration: underline;
+    }
 
-#footer p {
-  margin: 4px 0;
-}
+    footer p {
+      margin: 6px 0;
+      text-align: center;
+      width: 100%;
+    }
 
 .horizontal-scroll::-webkit-scrollbar {
   height: 6px;
@@ -740,13 +748,13 @@ body {
     </section>
 
     <footer id="footer">
-  <p>
-    <a href="about.html">About</a> |
-    <a href="contact.html">Contact</a> |
-    <a href="privacy.html">Privacy Policy</a>
-  </p>
+    <p>
+      <a href="about.html">About</a> |
+      <a href="contact.html">Contact</a> |
+      <a href="privacy.html">Privacy Policy</a>
+    </p>
     <p>© 2025 Jadwal Pelajaran Digital.</p>
-</footer>
+  </footer>
 
     <script>
         document.addEventListener("DOMContentLoaded", async () => {
