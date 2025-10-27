@@ -26,7 +26,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-display: flex;
+  display: flex;
   flex-direction: column;
 }
 
@@ -120,16 +120,19 @@ main {
   color: #0d47a1;
   border: 2px solid #1565c0;
 }
+
 .class-btn.to {
   background: #ffebee;
   color: #b71c1c;
   border: 2px solid #c62828;
 }
+
 .class-btn.farmasi {
   background: #fffde7;
   color: #f57f17;
   border: 2px solid #f9a825;
 }
+
 .class-btn.aphp {
   background: #e8f5e9;
   color: #1b5e20;
@@ -140,9 +143,11 @@ main {
   font-weight: 500;
   filter: brightness(1.05);
 }
+
 .class-btn.kelas11 {
   font-weight: 600;
 }
+
 .class-btn.kelas12 {
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -157,14 +162,17 @@ main {
   background: #1565c0;
   border-color: #1565c0;
 }
+
 .class-btn.to.active {
   background: #c62828;
   border-color: #c62828;
 }
+
 .class-btn.farmasi.active {
   background: #f9a825;
   border-color: #f9a825;
 }
+
 .class-btn.aphp.active {
   background: #2e7d32;
   border-color: #2e7d32;
@@ -373,15 +381,15 @@ main {
   width: 100%;
   max-width: none;
 }
-  
-.doksli-title {  
-  font-size: 1.6rem;  
-  font-weight: 600;  
-  color: #0f172a;  
-  margin-bottom: 20px;  
-  letter-spacing: -0.3px;  
-}  
-  
+
+.doksli-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 20px;
+  letter-spacing: -0.3px;
+}
+
 .doksli-images {
   display: flex;
   justify-content: center;
@@ -390,23 +398,24 @@ main {
   flex-wrap: wrap;
   max-width: 1000px;
   margin: 0 auto;
-  }
-  
-.doksli-images img {  
-  width: 45%;  
-  max-width: 380px;  
-  height: auto;  
-  border-radius: 12px;  
-  border: 1.5px solid rgba(15, 98, 254, 0.12);  
-  box-shadow: 0 4px 12px rgba(15, 98, 254, 0.08);  
-  transition: transform 0.3s ease, box-shadow 0.3s ease;  
-  cursor: pointer;  
-}  
-  
-.doksli-images img:hover {  
-  transform: scale(1.03);  
-  box-shadow: 0 8px 20px rgba(15, 98, 254, 0.15);  
 }
+
+.doksli-images img {
+  width: 45%;
+  max-width: 380px;
+  height: auto;
+  border-radius: 12px;
+  border: 1.5px solid rgba(15, 98, 254, 0.12);
+  box-shadow: 0 4px 12px rgba(15, 98, 254, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.doksli-images img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(15, 98, 254, 0.15);
+}
+
 .feedback-section {
   background: var(--card);
   border: 1px solid rgba(12, 22, 45, 0.05);
@@ -453,7 +462,7 @@ main {
 }
 
 .feedback-form .btn-send {
-  background: #00C205;
+  background: #00c205;
   color: white;
   border: none;
   border-radius: 8px;
@@ -465,7 +474,7 @@ main {
 }
 
 .feedback-form .btn-send:hover {
-  background: #02BD18;
+  background: #02bd18;
   transform: scale(1.06);
 }
 
@@ -524,10 +533,12 @@ main {
 .horizontal-scroll::-webkit-scrollbar {
   height: 6px;
 }
+
 .horizontal-scroll::-webkit-scrollbar-thumb {
   background: rgba(15, 98, 254, 0.25);
   border-radius: 3px;
 }
+
 .horizontal-scroll::-webkit-scrollbar-track {
   background: transparent;
 }
@@ -537,49 +548,49 @@ main {
   body {
     font-size: 15px;
   }
-  
+
   .app {
     padding: 10px;
   }
-  
+
   .app-header {
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding: 14px;
   }
-  
+
   .app-header .big-title {
     text-align: center;
     margin-bottom: 6px;
   }
-  
+
   .controls {
     justify-content: center;
   }
-  
+
   .main {
     flex-direction: column;
     gap: 10px;
   }
-  
+
   .days-rail {
     display: none !important;
   }
-  
+
   .content {
     width: 100%;
     flex: 1 1 100%;
   }
-  
+
   .table {
     min-width: 600px;
   }
-  
+
   .day-card {
     animation-duration: 400ms;
   }
-  
+
   .custom-slot {
     background: #dbeafe;
     border-left: 4px solid #3b82f6;
@@ -587,7 +598,7 @@ main {
     border-radius: 10px;
     color: #1e3a8a;
   }
-  
+
   .doksli-images img {
     width: 90%;
   }
@@ -597,7 +608,7 @@ main {
   }
 }
 
-    .support-section {
+.support-section {
   background: var(--card);
   border: 1px solid rgba(12, 22, 45, 0.05);
   border-radius: var(--radius);
@@ -663,6 +674,7 @@ main {
   opacity: 0.8;
   margin-bottom: 6px;
 }
+
 .global-cta {
   display: flex;
   flex-direction: column;
@@ -698,7 +710,7 @@ main {
   justify-content: space-between;
   text-align: center;
   background: var(--card);
-  border: 1px solid rgba(12,22,45,0.05);
+  border: 1px solid rgba(12, 22, 45, 0.05);
   border-radius: 1rem;
   padding: 2rem;
   width: 100%;
@@ -747,7 +759,7 @@ main {
 }
 
 .cta-btn.whatsapp {
-  background: #01C853;
+  background: #01c853;
 }
 
 .cta-btn.whatsapp:hover {
