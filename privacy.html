@@ -5,120 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kebijakan Privasi - Jadwal Pelajaran Digital</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    :root {
-      --text-color: #333;
-      --accent-color: #007bff;
-      --bg-color: #fff;
-      --muted-color: #666;
-    }
-
-    body {
-      font-family: "Inter", system-ui, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: var(--bg-color);
-      color: var(--text-color);
-      line-height: 1.7;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-
-    main {
-      flex: 1;
-      max-width: 850px;
-      margin: 80px auto;
-      padding: 0 20px;
-    }
-
-    h1 {
-      text-align: center;
-      color: #111;
-      margin-bottom: 25px;
-      font-size: 1.9rem;
-    }
-
-    h2 {
-      margin-top: 30px;
-      color: #222;
-      font-size: 1.2rem;
-    }
-
-    p {
-      text-align: justify;
-      margin-bottom: 16px;
-      font-size: 1rem;
-      color: var(--muted-color);
-    }
-
-    ul {
-      margin-left: 20px;
-      color: var(--muted-color);
-    }
-
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      color: #888;
-      margin-top: auto;
-      padding: 25px 10px;
-      border-top: 1px solid #eee;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-
-    footer a {
-      color: #666;
-      text-decoration: none;
-      margin: 0 6px;
-      transition: color 0.2s ease;
-    }
-
-    footer a:hover {
-      color: #000;
-      text-decoration: underline;
-    }
-
-    footer p {
-      margin: 6px 0;
-      text-align: center;
-      width: 100%;
-    }
-  </style>
 </head>
 <body>
-  <main>
+  <main class="contentt">
     <h1>Kebijakan Privasi</h1>
+
     <p>
-      Di <strong>Jadwal Pelajaran Digital</strong>, privasi pengguna sangat kami hargai. 
-      Halaman ini menjelaskan jenis data yang dikumpulkan dan bagaimana data tersebut digunakan.
+      Di <strong>Jadwal Pelajaran Digital</strong>, privasi pengguna sangat kami hargai. Halaman ini menjelaskan jenis data yang dikumpulkan dan bagaimana data tersebut digunakan.
     </p>
 
     <h2>1. Informasi yang Kami Kumpulkan</h2>
     <p>
-      Situs ini hanya mengumpulkan data yang sangat terbatas, yaitu <strong>nama kelas</strong> yang pilih pengguna
-      (contoh: “10 TJKT”, “11 TO”, dll) untuk menampilkan jadwal pelajaran sesuai pilihan Anda.
+      Situs ini hanya mengumpulkan data yang sangat terbatas, yaitu nama kelas yang dipilih pengguna (contoh: “10 TJKT”, “11 TO”, dll) untuk menampilkan jadwal pelajaran sesuai pilihan Anda.
     </p>
     <p>
-      Kami <strong>tidak mengumpulkan informasi pribadi</strong> seperti nama lengkap, alamat email, atau data sensitif lainnya.
-      Semua data yang dimasukkan tidak disimpan di server dan hanya digunakan sementara di perangkat pengguna.
+      Kami tidak mengumpulkan informasi pribadi seperti nama lengkap, alamat email, atau data sensitif lainnya. Semua data yang dimasukkan tidak disimpan di server dan hanya digunakan sementara di perangkat pengguna.
     </p>
 
     <h2>2. Cookie dan Teknologi Pelacakan</h2>
     <p>
-      Situs ini dapat menggunakan cookie dari pihak ketiga seperti <strong>Google AdSense</strong> untuk menampilkan iklan yang relevan.
-      Cookie ini membantu menyesuaikan iklan berdasarkan minat pengguna.
+      Situs ini dapat menggunakan cookie dari pihak ketiga seperti Google AdSense untuk menampilkan iklan yang relevan. Cookie ini membantu menyesuaikan iklan berdasarkan minat pengguna.
     </p>
 
     <h2>3. Iklan Pihak Ketiga</h2>
     <p>
-      Google sebagai penyedia iklan pihak ketiga menggunakan cookie DART untuk menampilkan iklan berdasarkan kunjungan pengguna ke situs ini dan situs lainnya di internet.
-      Pengguna dapat menonaktifkan penggunaan cookie DART dengan mengunjungi 
-      <a href="https://policies.google.com/technologies/ads" target="_blank">Kebijakan Privasi Iklan Google</a>.
+      Google sebagai penyedia iklan pihak ketiga menggunakan cookie DART untuk menampilkan iklan berdasarkan kunjungan pengguna ke situs ini dan situs lainnya di internet. Pengguna dapat menonaktifkan penggunaan cookie DART dengan mengunjungi <a href="https://policies.google.com/technologies/ads" target="_blank">Kebijakan Privasi Iklan Google</a>.
     </p>
 
     <h2>4. Persetujuan</h2>
@@ -132,13 +43,14 @@
     </p>
   </main>
 
-  <footer>
-    <p>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a> |
-      <a href="contact.html">Contact</a> |
-    </p>
-    <p>© 2025 Jadwal Pelajaran Digital</p>
+  <footer id="footer">
+    <p>© 2025 Jadwal Pelajaran Digital.</p>
+    <div class="footer-links">
+      <a href="index.html">Beranda</a>
+      <a href="about.html">Tentang</a>
+      <a href="contact.html">Kontak</a>
+      <a href="privacy.html" class="active">Kebijakan Privasi</a>
+    </div>
   </footer>
 </body>
 </html>
