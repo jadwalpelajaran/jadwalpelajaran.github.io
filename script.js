@@ -35,9 +35,9 @@ document.addEventListener("DOMContentLoaded", async () => {
     const curMins = now.getHours() * 60 + now.getMinutes();
     const todayName = getTodayName();
 
-    document.querySelectorAll(".copy-today-card tr.active").forEach((tr) =>
-      tr.classList.remove("active")
-    );
+    document
+      .querySelectorAll(".copy-today-card tr.active")
+      .forEach((tr) => tr.classList.remove("active"));
 
     const trs = document.querySelectorAll(
       `.copy-today-card[data-day="${todayName}"] [data-range]`
@@ -54,10 +54,13 @@ document.addEventListener("DOMContentLoaded", async () => {
       const pill = document.createElement("button");
       pill.className = "day-pill " + (day === todayName ? "today" : "");
       pill.innerHTML = `
-        <div class="day-name">${day}${day === todayName ? " • Hari Ini" : ""}</div>
+        <div class="day-name">${day}${
+          day === todayName ? " • Hari Ini" : ""
+        }</div>
         <div class="day-sub">${
           selectedClassData[day] ? selectedClassData[day].length : 0
         } Jam</div>`;
+
       pill.addEventListener("click", () => {
         const card = document.querySelector(
           `[data-day="${day}"]:not(.copy-today-card)`
@@ -203,7 +206,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     TJKT: "💻",
     TO: "🔧",
     FARMASI: "💊",
-    APHP: "🌿"
+    APHP: "🌿",
   };
 
   classBtns.forEach((btn) => {
@@ -237,16 +240,16 @@ document.addEventListener("DOMContentLoaded", async () => {
   });
 
   const lastClass = localStorage.getItem("lastClass");
+
   if (lastClass && schedules[lastClass]) {
     document
       .querySelector(`.class-btn[data-class="${lastClass}"]`)
       ?.classList.add("active");
     renderSchedule(lastClass);
   } else {
-    const firstBtn = classBtns[0];
-    if (firstBtn) {
-      firstBtn.classList.add("active");
-      renderSchedule(firstBtn.getAttribute("data-class"));
-    }
+    status.style.display = "block";
+    status.textContent =
+      "Silakan pilih kelas terlebih dahulu untuk melihat jadwal.";
+    daysContainer.innerHTML = "";
   }
 });
