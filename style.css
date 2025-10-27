@@ -362,49 +362,47 @@ main {
   border-left: 5px solid #00c853;
 }
 
-.doksli-section {
-  background: var(--card);
-  border: 1px solid rgba(12, 22, 45, 0.05);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-1);
-  padding: 28px 20px;
-  margin: 40px auto 20px;
-  text-align: center;
-  max-width: 900px;
+.doksli-section {  
+  background: var(--card);  
+  border: 1px solid rgba(12, 22, 45, 0.05);  
+  box-shadow: var(--shadow-1);  
+  padding: 28px 20px;  
+  margin: 40px 0px 40px 0px;  
+  text-align: center;  
+  max-width: 900px;  
+}  
+  
+.doksli-title {  
+  font-size: 1.6rem;  
+  font-weight: 600;  
+  color: #0f172a;  
+  margin-bottom: 20px;  
+  letter-spacing: -0.3px;  
+}  
+  
+.doksli-images {  
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+  gap: 20px;  
+  flex-wrap: wrap;  
+}  
+  
+.doksli-images img {  
+  width: 45%;  
+  max-width: 380px;  
+  height: auto;  
+  border-radius: 12px;  
+  border: 1.5px solid rgba(15, 98, 254, 0.12);  
+  box-shadow: 0 4px 12px rgba(15, 98, 254, 0.08);  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;  
+  cursor: pointer;  
+}  
+  
+.doksli-images img:hover {  
+  transform: scale(1.03);  
+  box-shadow: 0 8px 20px rgba(15, 98, 254, 0.15);  
 }
-
-.doksli-title {
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: #0f172a;
-  margin-bottom: 20px;
-  letter-spacing: -0.3px;
-}
-
-.doksli-images {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.doksli-images img {
-  width: 45%;
-  max-width: 380px;
-  height: auto;
-  border-radius: 12px;
-  border: 1.5px solid rgba(15, 98, 254, 0.12);
-  box-shadow: 0 4px 12px rgba(15, 98, 254, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-}
-
-.doksli-images img:hover {
-  transform: scale(1.03);
-  box-shadow: 0 8px 20px rgba(15, 98, 254, 0.15);
-}
-
 .feedback-section {
   background: var(--card);
   border: 1px solid rgba(12, 22, 45, 0.05);
@@ -667,7 +665,7 @@ main {
   align-items: center;
   gap: 2rem;
   max-width: 900px;
-  margin: 4rem auto;
+  margin: 0px 0px 80px 0px;
   padding: 2rem;
 }
 
