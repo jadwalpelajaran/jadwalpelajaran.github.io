@@ -1,3 +1,9 @@
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/service-worker.js')
+    .then(() => console.log('SW aktif'))
+    .catch(err => console.error('SW gagal:', err));
+}
+
 document.addEventListener("DOMContentLoaded", async () => {
   const daysRail = document.getElementById("daysRail");
   const daysContainer = document.getElementById("daysContainer");
