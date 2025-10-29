@@ -1,0 +1,20 @@
+{
+  "name": "Jadwal Pelajaran Digital",
+  "short_name": "Jadwal Pelajaran",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#fff8f0",
+  "theme_color": "#0f62fe",
+  "icons": [
+    {
+      "src": "images.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
